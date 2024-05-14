@@ -31,16 +31,16 @@ This is a Python-based personal assistant program designed to help users with va
    - "Shutdown the system."
 
 ## Dependencies
-- pyttsx3
-- run_time
-- datetime
-- speech_recognition
-- wikipedia
-- webbrowser
-- pyautogui
-- psutil
-- pyjokes
-- os
+- [**pyttsx3**](https://pypi.org/project/pyttsx3/) - Text-to-speech conversion library in Python.
+- **run_time** `(*dev designed*)` - Tells time taken to run a function in the program
+- [**datetime**](https://docs.python.org/3/library/datetime.html) - Basic date and time types.
+- [**speech_recognition**](https://pypi.org/project/SpeechRecognition/) - Library for performing speech recognition, with support for several engines and APIs, online and offline.
+- [**wikipedia**](https://pypi.org/project/wikipedia/) - Wikipedia API for Python.
+- [**webbrowser**](https://docs.python.org/3/library/webbrowser.html) - Convenient Web-browser controller.
+- [**pyautogui**](https://pypi.org/project/PyAutoGUI/) - Cross-platform GUI automation for human beings.
+- [**psutil**](https://pypi.org/project/psutil/) - Cross-platform lib for process and system monitoring in Python.
+- [**pyjokes**](https://pypi.org/project/pyjokes/) - One line jokes for programmers (jokes as a service).
+- [**os**](https://docs.python.org/3/library/os.html) - Miscellaneous operating system interfaces.
 
 ## Note
 - Ensure your microphone is properly configured for voice recognition.
