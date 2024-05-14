@@ -7,7 +7,7 @@ def run_time(func: Any) -> Any:
         start: float = time.perf_counter()
         result: Any = func(*args, **kwargs)
         end: float = time.perf_counter()
-        print(f"Function {func.__name__} took {end - start} seconds to run.")
+        print(f"Function * {func.__name__} * took {end - start} seconds to run.")
         return result
 
     return wrapper
