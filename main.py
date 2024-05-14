@@ -5,6 +5,8 @@ import speech_recognition as sr
 import wikipedia
 import webbrowser as wb
 import pyautogui
+import psutil
+import pyjokes
 import os
 
 
@@ -72,6 +74,17 @@ def take_screenshot() -> None:
 
 
 @rt.run_time
+def system_usage() -> None:
+    cpu = psutil.cpu_percent()
+    speak(f"CPU is at {cpu} percent")
+    memory = psutil.virtual_memory()
+    speak(f"Memory is at {memory.percent} percent")
+    battery = psutil.sensors_battery().percent
+    speak(f"Battery is at {battery} percent")
+
+
+
+@rt.run_time
 def get_audio() -> str:
     r: sr.Recognizer = sr.Recognizer()
     with sr.Microphone() as source:
@@ -91,7 +104,7 @@ def get_audio() -> str:
 
 
 if __name__ == "__main__":
-    # greet()
+    greet()
 
     while True:
         query = get_audio().lower()
@@ -114,6 +127,12 @@ if __name__ == "__main__":
         if "screenshot" in query:
             take_screenshot()
             speak("Screenshot taken successfully!")
+
+        if "usage" in query:
+            system_usage()
+
+        if "joke" in query:
+            speak(pyjokes.get_joke())
 
         if "sleep" in query:
             speak("System is going to sleep now")

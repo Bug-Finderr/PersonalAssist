@@ -6,10 +6,8 @@
 - [ ] [**pyaudio**](https://pypi.org/project/PyAudio/) - Python bindings for PortAudio.
 - [ ] [**setuptools**](https://pypi.org/project/setuptools/) - Easily download, build, install, upgrade, and uninstall Python packages. (An alternate for distutils which is used in speech_recognition)
 - [ ] [**pyautogui**](https://pypi.org/project/PyAutoGUI/) - Cross-platform GUI automation for human beings.
-
-### Future Packages
-- [ ] [**`gTTS`**](https://pypi.org/project/gTTS/) - Google Text-to-Speech.
-- [ ] [**`pydub`**](https://pypi.org/project/pydub/) - Manipulate audio with a simple and easy high level interface.
-- [ ] [**`wave`**](https://docs.python.org/3/library/wave.html) - Read and write WAV files.
-- [ ] [**`os`**](https://docs.python.org/3/library/os.html) - Miscellaneous operating system interfaces.
-- [ ] [**`opencv-python`**](https://pypi.org/project/opencv-python/) - Wrapper package for OpenCV python bindings.
+- [ ] [**os**](https://docs.python.org/3/library/os.html) - Miscellaneous operating system interfaces.
+- [ ] [**webbrowser**](https://docs.python.org/3/library/webbrowser.html) - Convenient Web-browser controller.
+- [ ] [**wikipedia**](https://pypi.org/project/wikipedia/) - Wikipedia API for Python.
+- [ ] [**pyjokes**](https://pypi.org/project/pyjokes/) - One line jokes for programmers (jokes as a service).
+- [ ] [**psutil**](https://pypi.org/project/psutil/) - Cross-platform lib for process and system monitoring in Python.
