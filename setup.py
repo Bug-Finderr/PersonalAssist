@@ -24,7 +24,7 @@ def create_install_activate():
         print("Packages installed successfully.")
 
         # Activate the virtual environment
-        subprocess.run(['cmd.exe', '/c', 'venv\\Scripts\\activate'], shell=True, check=True)
+        subprocess.run(['cmd.exe', '/k', 'venv\\Scripts\\activate'], shell=True, check=True)
 
     except subprocess.CalledProcessError:
         print("Error creating virtual environment or installing packages.")
