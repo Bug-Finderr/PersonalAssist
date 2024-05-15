@@ -11,3 +11,4 @@
 - [ ] [**wikipedia**](https://pypi.org/project/wikipedia/) - Wikipedia API for Python.
 - [ ] [**pyjokes**](https://pypi.org/project/pyjokes/) - One line jokes for programmers (jokes as a service).
 - [ ] [**psutil**](https://pypi.org/project/psutil/) - Cross-platform lib for process and system monitoring in Python.
+- [ ] [**logging**](https://docs.python.org/3/library/logging.html) - Flexible event logging system for applications.
