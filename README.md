@@ -17,14 +17,17 @@ This is a Python-based personal assistant program designed to help users with va
 
 ## Installation
 1. Clone this repository to your local machine. *(Assuming you are cloning to your current working directory.)*
+
    ```
    git clone https://github.com/Bug-Finderr/PersonalAssist.git
    ```
-2. Navigate to the project directory.
-    ```
+3. Navigate to the project directory.
+
+   ```
     cd PersonalAssist
     ```
-3. Run `setup.py` to install the required packages and set up a virtual environment.
+5. Run `setup.py` to install the required packages and set up a virtual environment.
+
    ```
    python setup.py
    ```
@@ -32,11 +35,12 @@ This is a Python-based personal assistant program designed to help users with va
 ## Usage
 1. After setup, you must tweak some settings in `config.py` to effectively run the assistant.
 2. Run `main.py` or the following command in your terminal:
+
    ```
    python main.py
    ```
-3. Follow the prompts or say commands to interact with the assistant.
-4. **Please look up to the code for the list of available commands until further updates.** <br>
+4. Follow the prompts or say commands to interact with the assistant.
+5. **Please look up to the code for the list of available commands until further updates.** <br>
    Example commands include:
    - "What's the time?"
    - "Search Wikipedia for Albert Einstein."
