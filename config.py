@@ -1,4 +1,13 @@
-# Description: This file contains the tweaks that can be made to the program
+"""
+Description: This file contains the configuration for the voice assistant.
+"""
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+# Please replace the values below with your own
 
 # Voice ID: 0 for male, 1 for female
 voice_id = 1
@@ -12,3 +21,9 @@ browser_path = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.e
 
 # Path to the screenshot directory
 screenshot_path = "D:/ss.png"
+
+# Openweathermap API key (Replace it here as a "string" else you're smart enough to figure out)
+weather_api = os.getenv("WEATHER_API")      # Get your API key from https://openweathermap.org/api
+
+# City name
+city = "Bangalore"

@@ -32,3 +32,6 @@ def test() -> None:
 
     logging.info("Testing joke()...")           # Test result: Works fine
     f.joke()
+
+    logging.info("Testing weather()...")        # Test result: Works fine
+    f.weather()

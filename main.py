@@ -35,6 +35,9 @@ if __name__ == '__main__':
         elif "joke" in query:
             f.joke()
 
+        elif "weather" in query:
+            f.weather()
+
         elif "sleep" in query:        # Test result: Works fine
             speak("System is going to sleep now")
             os.system("shutdown /h")

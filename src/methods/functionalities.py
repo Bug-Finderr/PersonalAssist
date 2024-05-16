@@ -9,6 +9,7 @@ import webbrowser as wb
 import psutil
 import pyjokes
 import config
+import requests
 
 
 @run_time
@@ -87,6 +88,19 @@ def system_usage() -> None:
 @run_time
 def joke() -> None:
     speak(pyjokes.get_joke())
+
+
+@run_time
+def weather() -> None:
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={config.city}&appid={config.weather_api}&units=metric"
+    response = requests.get(url).json()
+    if response["cod"] != "404":
+        temperature = response["main"]["temp"]
+        humidity = response["main"]["humidity"]
+        desc = response["weather"][0]["description"]
+        speak(f"The temperature is {temperature}°C, with {desc}, and {humidity}% humidity")
+    else:
+        speak("City not found. Please try again.")
 
 
 if __name__ == "__main__":

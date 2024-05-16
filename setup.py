@@ -19,7 +19,10 @@ def create_install_activate():
                        "pyautogui",
                        "wikipedia",
                        "pyjokes",
-                       "psutil"]
+                       "psutil",
+                       "webbrowser",
+                       "python-dotenv",
+                       "requests",]
         subprocess.run(["cmd.exe", "/c", ' '.join(install_cmd)], shell=True, check=True)
         print("Packages installed successfully.")
 
